@@ -33,9 +33,6 @@ body {
             align-items: center;
     font-family: 'Liu Jian Mao Cao', cursive; }
 
-div {
-  margin: 40px; }
-
 #talk {
   background-color: blue;
   border-radius: 20px 0px 20px 20px;
@@ -122,17 +119,31 @@ button {
     background-color: gold; }
 
 #container_water {
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
   #container_water li:first-child {
-    background-color: yellow; }
+    background-color: yellow;
+    -webkit-transform: scale(2);
+            transform: scale(2); }
+  #container_water li:nth-child(2) {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
   #container_water li:last-child {
-    background-color: pink; }
+    background-color: pink;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
   #container_water .water {
     background-color: blue;
     border-radius: 20px 0px 20px 20px;
