@@ -7,13 +7,13 @@ body{
     background-image: url(./assets/pexels-photo-1564506.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-#talk{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#talk{
     animation: appear 2s ease-in-out ;
 }
 
@@ -26,3 +26,20 @@ to{
 opacity: 1;
 }
 }
+
+
+#talk2{
+    text-align: center;
+    animation: appearBottom 2s linear ;
+}
+
+@keyframes appearBottom{
+    from{
+    transform: translateY(100vh);
+    }
+
+    to{
+    transform: translateY(100 vh);
+    }
+} */
+
