@@ -30,7 +30,8 @@ opacity: 1;
 
 #talk2{
     text-align: center;
-    animation: appearBottom 2s linear ;
+    animation: appearBottom 2s linear, blink 2s  ;
+    color:pink
 }
 
 @keyframes appearBottom{
@@ -41,5 +42,15 @@ opacity: 1;
     to{
     transform: translateY(100 vh);
     }
-} */
+} 
+
+
+
+@keyframes blink{
+    0%{opacity: 1; color:blue}
+    25%{opacity: 0;color:red}
+    50%{opacity: 1; color:violet}
+    75%{opacity: 0;color:green}
+    100%{opacity: 1;color:pink}
+} 
 
