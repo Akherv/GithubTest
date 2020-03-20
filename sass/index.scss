@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -19,11 +19,12 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        font-family: 'Liu Jian Mao Cao', cursive;
     }
 }
 div :first-child{
     margin:20px;
+    
 }
 
 #talk{
