@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+$couleur_principale:pink;
+$cp:$couleur_principale;
+
 *{
     margin:0;
     padding: 0;
@@ -11,8 +14,8 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-around;
+    align-items: center;;
     padding: 5vh 20%;
 
     #container{
@@ -22,7 +25,7 @@ body{
         font-family: 'Liu Jian Mao Cao', cursive;
     }
 }
-div :first-child{
+div {
     margin:40px;
     
 }
@@ -49,7 +52,7 @@ div :first-child{
 #talk2{
     text-align: center;
     animation: appearBottom 2s linear, blink 2s linear ;
-    color:pink;
+    color:$cp;
 
     @keyframes appearBottom{
         from{
@@ -91,4 +94,39 @@ button{
         color:white;
         background-color: gold;
     }
+}
+
+#container_water{
+display: flex;
+flex-direction: column;
+
+    
+          & li:first-child{
+          background-color:yellow;
+          }
+
+          & li:last-child{
+            background-color:pink;
+            }
+
+
+        .water{
+            background-color: blue;
+            border-radius: 20px 0px 20px 20px;
+            padding: 20px;
+            color:white;
+            list-style-type: none;
+            animation: appear 2s ease-in-out ;
+
+
+            @keyframes appear{
+                from{
+                opacity: 0;
+                }
+                to{
+                opacity: 1;
+                }
+                }
+}
+    
 }
