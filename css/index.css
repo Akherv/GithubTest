@@ -33,8 +33,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    body #container div :first-child {
-      margin: 20px; }
+
+div :first-child {
+  margin: 20px; }
 
 #talk {
   background-color: blue;
@@ -115,5 +116,8 @@ button {
   border: none;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+  button:hover {
+    color: white;
+    background-color: gold; }
 
 /*# sourceMappingURL=index.css.map */
